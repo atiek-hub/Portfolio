@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: `/${repoName}`,
   images: { unoptimized: true },
-  assetPrefix: `/${repoName}/`, // ビルド出力をdocsにする（GitHub Pages対応）
+  assetPrefix: `/${repoName}/`, // GitHub Pages用の設定
 };
 
 export default nextConfig;
