@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
-
+const repoName = "Portfolio";
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/docs",
+  basePath: `/${repoName}`,
   images: { unoptimized: true },
-  distDir: "/docs", // ビルド出力をdocsにする（GitHub Pages対応）
+  assetPrefix: `/${repoName}/`, // ビルド出力をdocsにする（GitHub Pages対応）
 };
 
 export default nextConfig;
