@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+// import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -38,7 +39,9 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-lg text-gray-400 mb-12 max-w-2xl">
-              モダンなWeb技術を活用して、ユーザーフレンドリーなアプリケーションを開発することを得意としています。
+              モダンなWeb技術を活用して、フルスタックな開発を行っています。
+              <br />
+              ユーザーフレンドリーなアプリケーションを開発することを得意としています。
             </p>
 
             <div className="flex space-x-6 mb-12">
@@ -50,22 +53,22 @@ const Hero = () => {
               >
                 <FaGithub className="w-8 h-8" />
               </Link>
-              <Link
+              {/* <Link
                 href="https://twitter.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-50 hover:text-violet-300 transition-colors"
               >
                 <FaTwitter className="w-8 h-8" />
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="https://linkedin.com/in/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-50 hover:text-violet-300 transition-colors"
               >
                 <FaLinkedin className="w-8 h-8" />
-              </Link>
+              </Link> */}
             </div>
 
             <motion.div
@@ -73,12 +76,12 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              <Link
+              {/* <Link
                 href="#contact"
                 className="inline-block bg-violet-500 hover:bg-violet-600 text-gray-50 font-semibold py-3 px-8 rounded-full transition-colors"
               >
                 お問い合わせ
-              </Link>
+              </Link> */}
             </motion.div>
           </motion.div>
         </div>

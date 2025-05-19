@@ -20,23 +20,25 @@ const calculateLevel = (years: number): number => {
 
 const skills: Skill[] = [
   // Frontend
-  { name: "React", experienceYears: 3, category: "frontend" },
-  { name: "TypeScript", experienceYears: 2.5, category: "frontend" },
-  { name: "Next.js", experienceYears: 2, category: "frontend" },
-  { name: "HTML/CSS", experienceYears: 3.5, category: "frontend" },
-  { name: "Tailwind CSS", experienceYears: 1.5, category: "frontend" },
+  { name: "React", experienceYears: 2, category: "frontend" },
+  { name: "TypeScript", experienceYears: 2, category: "frontend" },
+  { name: "Next.js", experienceYears: 0.4, category: "frontend" },
+  { name: "HTML/CSS", experienceYears: 2, category: "frontend" },
+  { name: "Vue", experienceYears: 0.2, category: "frontend" },
 
   // Backend
-  { name: "Node.js", experienceYears: 1.5, category: "backend" },
-  { name: "NestJS", experienceYears: 1, category: "backend" },
-  { name: "Prisma", experienceYears: 0.8, category: "backend" },
-  { name: "MySQL", experienceYears: 1.2, category: "backend" },
+  { name: "Node.js", experienceYears: 2, category: "backend" },
+  { name: "NestJS", experienceYears: 0.2, category: "backend" },
+  { name: "Hono", experienceYears: 0.2, category: "backend" },
+  { name: "PHP(Laravel)", experienceYears: 0.3, category: "backend" },
+  { name: "Python", experienceYears: 0.1, category: "backend" },
+  { name: "Prisma", experienceYears: 0.2, category: "backend" },
+  { name: "Supabase", experienceYears: 0.2, category: "backend" },
 
   // Other
-  { name: "Git", experienceYears: 3, category: "other" },
-  { name: "Docker", experienceYears: 1, category: "other" },
-  { name: "AWS", experienceYears: 1.5, category: "other" },
-  { name: "CI/CD", experienceYears: 1, category: "other" },
+  { name: "Git", experienceYears: 2, category: "other" },
+  { name: "Windows", experienceYears: 2, category: "other" },
+  { name: "Test", experienceYears: 0.6, category: "other" },
 ];
 
 const categories = {
@@ -65,14 +67,21 @@ const SkillBar = ({
     2: "bg-gradient-to-r from-violet-200 to-fuchsia-200",
     1: "bg-gradient-to-r from-violet-100 to-fuchsia-100",
   };
-
+  const yearsText = (year: number) => {
+    if (year >= 1) {
+      return `${year.toFixed(1)}年`;
+    } else {
+      const month = year * 10;
+      return `${month}ヶ月`;
+    }
+  };
   return (
     <div ref={ref} className="mb-6">
       <div className="flex justify-between items-center mb-2">
         <span className="text-gray-50 font-medium">{name}</span>
         <div className="flex items-center space-x-3">
           <span className="text-gray-300 text-sm">
-            {experienceYears.toFixed(1)}年
+            {yearsText(experienceYears)}
           </span>
           <span className="text-yellow-400">
             {"★".repeat(level)}

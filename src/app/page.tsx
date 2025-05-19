@@ -6,7 +6,7 @@ import About from "@/components/sections/About";
 import Portfolio from "@/components/sections/Portfolio";
 import Skills from "@/components/sections/Skills";
 import Blog from "@/components/sections/Blog";
-import Contact from "@/components/sections/Contact";
+// import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Portfolio />
       <Skills />
       <Blog />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }
