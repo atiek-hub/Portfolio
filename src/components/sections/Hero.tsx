@@ -16,7 +16,7 @@ const Hero = () => {
           src="/IMG_5093.jpeg"
           alt="Background"
           fill
-          className="object-cover opacity-15"
+          className="object-cover opacity-60"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
