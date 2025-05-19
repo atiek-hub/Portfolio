@@ -23,15 +23,42 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "プロジェクト1",
+    title: "Recipe Manager",
     description:
-      "Reactとタイプスクリプトを使用したモダンなWebアプリケーション。状態管理にReduxを採用し、UIコンポーネントはMaterial-UIを使用。",
-    technologies: ["React", "TypeScript", "Redux", "Material-UI"],
-    image: "/project1.jpg",
-    githubUrl: "https://github.com/yourusername/project1",
-    demoUrl: "https://project1-demo.com",
-    role: "フロントエンド開発リーダー",
-    challenges: "パフォーマンス最適化、コンポーネントの再利用性向上",
+      "レシピ管理アプリ。ユーザーはレシピを追加、編集、削除できる。楽天APIを使い、レシピの検索も可能。",
+    technologies: [
+      "React",
+      "TypeScript",
+      "shadcn/ui",
+      "Bun",
+      "Hono",
+      "Prisma",
+      "Supabase",
+    ],
+    image: "/recipe-mgr.png",
+    githubUrl: "https://github.com/atiek-hub/recipe-mgr",
+    demoUrl: "https://zenn.dev/articles/6d91fd85aa47f2",
+    role: "フロントエンド、バックエンド",
+    challenges: "DB設計、HonoでのAPI設計",
+  },
+  {
+    title: "Util Func",
+    description:
+      "タイマー、ストップウォッチ、カレンダー機能を持つユーティリティアプリ。",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Redux",
+      "shadcn/ui",
+      "NestJS",
+      "Prisma",
+      "Supabase",
+    ],
+    image: "/utilfunc.png",
+    githubUrl: "https://github.com/atiek-hub/util-function",
+    demoUrl: "https://zenn.dev/articles/158e513f8e2cb6",
+    role: "フロントエンド、バックエンド",
+    challenges: "コンポーネントの再利用性向上、UI/UXの改善",
   },
   // 他のプロジェクトを追加
 ];

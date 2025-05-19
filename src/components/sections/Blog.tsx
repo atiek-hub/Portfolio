@@ -16,13 +16,31 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
-    title: "Next.jsとTailwind CSSでモダンなポートフォリオサイトを作る",
+    title: "Reactでタイマーアプリを作る",
     excerpt:
-      "Next.jsとTailwind CSSを使用して、アニメーションやダークモード対応のポートフォリオサイトを作成する方法を解説します。",
-    date: "2024-03-01",
+      "Reactの学習を兼ねてタイマーアプリを作成しました。基本的な機能を実装し、UIを整えました。",
+    date: "2024/12/07",
     platform: "Zenn",
-    url: "https://zenn.dev/yourusername/articles/portfolio-site",
-    thumbnail: "/blog1.jpg",
+    url: "https://zenn.dev/k_m_i/articles/ed06f17a3b26bf",
+    thumbnail: "/タイマーアプリ.png",
+  },
+  {
+    title: "カレンダーアプリを作る(フロントエンド編①)",
+    excerpt:
+      "ReactとTypeScriptを使用してカレンダーアプリのフロントエンドを作成する方法を解説します。",
+    date: "2025/04/09",
+    platform: "Zenn",
+    url: "https://zenn.dev/k_m_i/articles/158e513f8e2cb6",
+    thumbnail: "/calendar.png",
+  },
+  {
+    title: "[個人開発]料理のレシピを管理できるサイト",
+    excerpt:
+      "楽天APIを使用して、料理のレシピを検索したり、オリジナルのレシピを登録して管理できるアプリを作成しました。",
+    date: "2025/05/12",
+    platform: "Zenn",
+    url: "https://zenn.dev/k_m_i/articles/6d91fd85aa47f2",
+    thumbnail: "/recipe.png",
   },
   // 他の記事を追加
 ];
