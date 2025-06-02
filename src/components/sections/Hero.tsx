@@ -2,9 +2,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 // import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import { SiZenn } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -53,22 +54,22 @@ const Hero = () => {
               >
                 <FaGithub className="w-8 h-8" />
               </Link>
-              {/* <Link
-                href="https://twitter.com/yourusername"
+              <Link
+                href="https://x.com/oezfvo1hxqtkkh1?s=21&t=hC_yO6zSASoUC0FgulVVww"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-50 hover:text-violet-300 transition-colors"
               >
                 <FaTwitter className="w-8 h-8" />
-              </Link> */}
-              {/* <Link
-                href="https://linkedin.com/in/yourusername"
+              </Link>
+              <Link
+                href="https://zenn.dev/k_m_i"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-50 hover:text-violet-300 transition-colors"
               >
-                <FaLinkedin className="w-8 h-8" />
-              </Link> */}
+                <SiZenn className="w-8 h-8" />
+              </Link>
             </div>
 
             <motion.div
