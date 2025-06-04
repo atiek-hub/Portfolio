@@ -32,7 +32,7 @@ const Hero = () => {
             className="text-left"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-50 mb-6 leading-tight">
-              K.M
+              Myg
               <span className="block text-2xl md:text-3xl font-normal text-violet-200 mt-2">
                 React × TypeScriptが得意な
                 <br />
@@ -47,7 +47,7 @@ const Hero = () => {
 
             <div className="flex space-x-6 mb-12">
               <Link
-                href="https://github.com/yourusername"
+                href="https://github.com/atiek-hub"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-50 hover:text-violet-300 transition-colors"
